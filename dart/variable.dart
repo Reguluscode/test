@@ -1,12 +1,14 @@
 void main() {
   var str1 = '123';
+  var number1 = 456;
   String str2 = '456';
-  int number = 789;
+  int number2 = 789;
   double pi = 3.14;
   print('hello world');
   print(str1);
   print(str2);
-  print(number);
+  print(number1);
+  print(number2);
   print(pi);
 //变量名字必须由字母，数字，下划线_，美元符号$构成
 //标识符不能数字开头
