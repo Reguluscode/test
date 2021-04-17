@@ -17,8 +17,8 @@
 <br>git remote -v 查看远程库信息</br>
 <br>git remote rm <name> 删除远程库,此处的“删除”其实是解除了本地和远程的绑定关系，并不是物理上删除了远程库。远程库本身并没有任何改动。要真正删除远程库，需要登录到GitHub，在后台页面找到删除按钮再删除。</br>
 <br>git remote add origin git@server-name:path/repo-name.git关联远程库</br>
-<br></br>
-<br></br>
+<br>git pull origin master拉取远程库项目</br>
+<br>git push -u origin master更新至远程库</br>
 <br></br>
 <br></br>
 <br></br>
