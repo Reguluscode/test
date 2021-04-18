@@ -34,7 +34,6 @@ void main() {
   assert(piAsString == '3.14');
   String PI = 3.14.toString();
   assert(PI == '3.14');
-  print(PI);
 //shift (<<, >>), AND (&), and OR (|) operators
   assert((3 << 1) == 6); // 0011 << 1 == 0110
   assert((3 >> 1) == 1); // 0011 >> 1 == 0001
@@ -43,6 +42,26 @@ void main() {
   bool c = true; //变量赋值only true or flase
   print(c);
 //list
+  var l1 = [
+    "1",
+    1,
+    true,
+  ]; //最后一个项目后可加逗号,对列表没有影响,避免复制粘贴出错,
+  print(l1);
+  print(l1.length);
+//指定类型的list
+  var l2 = <String>["1", "2", "3"];
+  print(l2);
+  var l3 = [];
+  print(l3.length);
+  l3.add("1");
+  l3.add(2);
+  print(l3);
+  print(l3.length);
+  l3.length = 0;
+  print(l3);
+  var l4 = List.filled(3, "1"); //固定长度,不能通过add添加元素,也不能修改长度
+  print(l4);
 //map
 //set
 //rune
