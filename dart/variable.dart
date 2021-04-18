@@ -4,7 +4,7 @@ void main() {
   String str2 = '456';
   int number2 = 789;
   double pi = 3.14;
-  print('hello world');
+  print('Hello world');
   print(str1);
   print(str2);
   print(number1);

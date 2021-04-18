@@ -1,3 +1,5 @@
+import 'dart:collection';
+
 void main() {
   String str1 = '123';
   str1 = '456';
@@ -50,19 +52,53 @@ void main() {
   print(l1);
   print(l1.length);
 //指定类型的list
-  var l2 = <String>["1", "2", "3"];
+  var l2 = <String>["2", "2", "3"];
   print(l2);
   var l3 = [];
   print(l3.length);
   l3.add("1");
-  l3.add(2);
+  l3.add(3);
   print(l3);
   print(l3.length);
   l3.length = 0;
   print(l3);
-  var l4 = List.filled(3, "1"); //固定长度,不能通过add添加元素,也不能修改长度
+  var l4 = List.filled(3, 4);
+  /*固定长度,不能通过add添加元素,也不能修改长度,
+  且元素为同类型元素*/
+  var l5 = List<String>.filled(3, "5");
   print(l4);
+  print(l5);
+  var l6 = [6, ...l4]; //将一个列表所有值插入另一个列表spread operator ()
+  print(l6);
+  var l7;
+  var l8 = [8, ...?l7]; //...?表示右侧列表可以为空
+  print(l8);
+//
 //map
+  var person = {
+    "name": "张三",
+    "age": 25,
+    "work": ["程序员", "python"]
+  };
+  print(person);
+  print(person["name"]);
+  print(person["age"]);
+  print(person["work"]);
+  var p = new Map();
+  p["name"] = "张三";
+  p["age"] = "24";
+  p["work"] = ["程序员", "flutter"];
+  print(p);
+//关键词类型判断 is
+  var sum = 123.0;
+  if (sum is String) {
+    print("sum是字符串");
+  } else if (sum is num) {
+    print("sum是数字");
+  } else {
+    print("sum是其他类型");
+  }
+  {}
 //set
 //rune
 //symbol
