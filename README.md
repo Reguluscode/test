@@ -19,7 +19,8 @@
 <br>git remote add origin git@server-name:path/repo-name.git关联远程库</br>
 <br>git pull origin master拉取远程库项目</br>
 <br>git push -u origin master更新至远程库</br>
-<br></br>
+<br>git config --global user.name "your name"更换用户名</br>
+<br>git config --global user.email "your email"更换用户邮箱</br>
 <br></br>
 <br></br>
 <br></br>
