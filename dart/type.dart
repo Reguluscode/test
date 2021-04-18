@@ -73,7 +73,7 @@ void main() {
   var l7;
   var l8 = [8, ...?l7]; //...?表示右侧列表可以为空
   print(l8);
-//
+//list收集用法,待了解
 //map
   var person = {
     "name": "张三",
