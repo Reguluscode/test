@@ -107,6 +107,7 @@ void main() {
   } else {
     print("sum是其他类型");
   }
+
 //set
 //rune
 //symbol
