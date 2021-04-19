@@ -18,6 +18,7 @@ void main() {
   var str4 = 'In a raw string, not even \n gets special treatment.';
   print(str3);
   print(str4);
+  print("--------------");
 //int double num(variable can have both integer and double values)
 // String -> int
   var one = int.parse('1');
@@ -43,6 +44,13 @@ void main() {
 //bool
   bool c = true; //变量赋值only true or flase
   print(c);
+  if (str3.isEmpty) {
+    print("null");
+  } else {
+    print(str3);
+    print(5.isNaN);
+  } //转换为bool类型 isEmpty是否为空 isNan 是否为非数字
+  print("----------------");
 //list
   var l1 = [
     "1",
@@ -73,6 +81,7 @@ void main() {
   var l7;
   var l8 = [8, ...?l7]; //...?表示右侧列表可以为空
   print(l8);
+  print("---------------");
 //list收集用法,待了解
 //map
   var person = {
@@ -98,7 +107,6 @@ void main() {
   } else {
     print("sum是其他类型");
   }
-  {}
 //set
 //rune
 //symbol

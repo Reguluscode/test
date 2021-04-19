@@ -20,4 +20,12 @@ void main() {
 //&&and ||or全为false则false,否则true
   print(m && n);
   print(m || n);
+// ??= 如果b为null的时候,将5赋值给b
+  b ??= 5;
+  print(b);
+//复合赋值运算 += -= *= /= %= ~/=
+//三目运算符
+  bool flag = true;
+  String d = flag ? "true" : "false";
+  print(d);
 }
